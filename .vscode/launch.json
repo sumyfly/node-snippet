@@ -1,0 +1,30 @@
+{
+  // Use IntelliSense to learn about possible Node.js debug attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "启动程序",
+      // "program": "${workspaceRoot}/src/index.ts",
+      "program": "${file}",
+      "preLaunchTask": "tsc", // use preLaunchTask or tsc or webpack to compile typescript source.
+      "cwd": "${workspaceRoot}",
+      "outFiles":[
+        // need * , if not it's a directory
+        "${workspaceRoot}/built/*"
+      ],
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "附加到进程",
+      "port": 5858,
+      "outFiles": []
+    }
+  ]
+}
