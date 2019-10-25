@@ -5,6 +5,6 @@
   "command": "tsc",
   "isShelCommand": true,
   "args": ["-p", "."],
-  "reveal": "silent",
-  "problemMatcher": "$tsc"
+  "reveal": "never",
+  "problemMatcher": "$tsc",
 }
