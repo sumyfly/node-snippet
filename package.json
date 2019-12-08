@@ -1,0 +1,25 @@
+{
+  "name": "snippet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumyfly/node-snippet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumyfly/node-snippet/issues"
+  },
+  "homepage": "https://github.com/sumyfly/node-snippet#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.14"
+  },
+  "dependencies": {
+    "thunkify": "^2.1.2"
+  }
+}
