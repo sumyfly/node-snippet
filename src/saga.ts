@@ -1,5 +1,5 @@
 // generator的特点是执行到某一步时，可以把控制权交给外部代码，由外部代码拿到返回结果后，决定该怎么做。
-
+// https://juejin.im/post/59e083c8f265da43111f3a1f
 function channel() {
   let taker;
   function take(cb) {
