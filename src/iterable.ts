@@ -1,6 +1,10 @@
 // 既然可迭代对象的规则必须在对象上部署Symbol.iterator属性，那么我们基本上就可以通过此属来判断对象是否为可迭代对象，
 // 然后就可以知道是否能使用 for of 取值了。
 
+function isIterable(object) {
+  return typeof object[Symbol.iterator] === 'function';
+}
+
 var iterableObj = {
   items: [100, 200, 300],
   [Symbol.iterator]: function() {
