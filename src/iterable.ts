@@ -30,6 +30,21 @@ for (var item of iterableObj) {
 
 // 链接：https://juejin.im/post/5dfcbc8c6fb9a0165e33172c
 
+// yield* 关键字
+// yield*后面跟的是一个可遍历的结构，执行时也会调用迭代器函数。
+
+let foo = function*() {
+  yield 1;
+  yield* [2, 3, 4];
+  yield 5;
+};
+
+const g = foo();
+console.log(g.next());
+console.log(g.next());
+console.log(g.next());
+console.log(g.next());
+
 var iterableObj = {
   items: [100, 200, 300],
   [Symbol.iterator]: function() {
